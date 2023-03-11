@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+    <meta charset="UTF-8">
+    <title>欢迎登录JitSain</title>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="keywords" content="登录JitSain, JitSain, 登录, 账号登录">
+    <meta name="application-name" content="JitSain">
+    <link rel="stylesheet" href="style.css">
+    <script src="../../cdn/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="main.js"></script>
+</head>
+<body>
+<div id="login-interface">
+    <h2 id="welcome">欢迎登录JitSain</h2>
+    <form action="login.php" name="login" method="post" onsubmit="return checkCommit()">
+        <div id="input">
+            <div class="line">
+                <label for="input_username">
+                    <input id="input_username" class="input" type="text" name="username" value=""
+                           placeholder="请输入用户名"/>
+                </label> <span id="username_tip" class="tip"></span>
+            </div>
+            <div class="line">
+                <label for="input_password">
+                    <input id="input_password" class="input" type="password" name="password" value=""
+                           placeholder="请输入密码"/>
+                </label>
+                <span id="password_tip" class="tip"></span>
+            </div>
+        </div>
+        <div class="line">
+            <label for="input_accept">
+                <input id="input_accept" class="accept" type="checkbox" name="accept" value="accepted"/>
+                <span class="accept">我已阅读并同意</span>
+                <a class="accept" href="../../../docs/rule/user/service-agreement/">服务协议</a>
+                <span class="accept">和</span>
+                <a class="accept" href="../../../docs/rule/user/privacy-policy/">隐私政策</a>
+            </label>
+            <span id="accept_tip" class="tip"></span>
+        </div>
+        <div class="line">
+            <input id="login" name="submit" type="submit" value="登录"/>
+        </div>
+    </form>
+</div>
+</body>
+</html>

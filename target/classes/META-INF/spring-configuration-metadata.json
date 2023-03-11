@@ -1,0 +1,36 @@
+{
+  "groups": [
+    {
+      "name": "mysql",
+      "type": "com.adisaint.start.config.database.MySQL",
+      "sourceType": "com.adisaint.start.config.database.MySQL"
+    }
+  ],
+  "properties": [
+    {
+      "name": "mysql.db-url",
+      "type": "java.lang.String",
+      "description": "MySQL DB_URL",
+      "sourceType": "com.adisaint.start.config.database.MySQL"
+    },
+    {
+      "name": "mysql.jdbc-driver",
+      "type": "java.lang.String",
+      "description": "MySQL 驱动",
+      "sourceType": "com.adisaint.start.config.database.MySQL"
+    },
+    {
+      "name": "mysql.password",
+      "type": "java.lang.String",
+      "description": "MySQL 密码",
+      "sourceType": "com.adisaint.start.config.database.MySQL"
+    },
+    {
+      "name": "mysql.user",
+      "type": "java.lang.String",
+      "description": "MySQL 用户名",
+      "sourceType": "com.adisaint.start.config.database.MySQL"
+    }
+  ],
+  "hints": []
+}

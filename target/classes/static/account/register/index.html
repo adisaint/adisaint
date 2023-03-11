@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="application-name" content="JitSain">
+    <meta name="keywords" content="欢迎注册Gandjax, Gandjax, 注册, 邮箱注册">
+    <title>欢迎注册Gandjax</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="../../cdn/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="../../script/js/utils/WebUtils.js"></script>
+    <script src="../../script/js/utils/StringUtils.js"></script>
+</head>
+<body>
+<div id="register-interface">
+    <h1 id="welcome">欢迎注册Gandjax</h1>
+    <form action="register.php" name="register" method="post" onsubmit="return checkSubmit()">
+        <div id="input">
+            <div class="line">
+                <label for="input_username">
+                    <input id="input_username" class="input" type="text" name="username" value=""
+                           placeholder="请输入用户名" onkeyup="checkUsername()"/>
+                </label>
+                <span id="username_tip" class="tip"></span>
+            </div>
+            <div class="line">
+                <label for="input_email">
+                    <input id="input_email" class="input" type="text" name="email" value="" placeholder="请输入邮箱"
+                           onkeyup="checkEmail()"/>
+                </label>
+                <span id="email_tip" class="tip"></span>
+            </div>
+            <div class="line">
+                <label for="input_password">
+                    <input id="input_password" class="input" type="password" name="password" value=""
+                           placeholder="请输入密码" onkeyup="checkPassword()"/>
+                </label>
+                <span id="password_tip" class="tip"></span>
+            </div>
+            <div class="line">
+                <label for="input_code">
+                    <input id="input_code" class="input" type="text" name="code" value="" placeholder="请输入验证码"
+                           onkeyup="checkCode()"/>
+                </label>
+                <input id="send" class="button" type="button" onclick="sendCode(this)" value="发送验证码"/>
+                <span id="code_tip" class="tip"></span>
+            </div>
+        </div>
+        <div class="line">
+            <label for="accept">
+                <input id="accept" class="accept" type="checkbox" name="accept" value="accepted"/>
+                <span class="accept">我已阅读并同意</span>
+                <a class="accept" href="../../../docs/rule/user/service-agreement/">服务协议</a>
+                <span class="accept">和</span>
+                <a class="accept" href="../../../docs/rule/user/privacy-policy/">隐私政策</a>
+            </label>
+            <span id="accept_tip" class="tip"></span>
+        </div>
+        <input id="register" name="submit" type="submit" value="注册"/>
+    </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="application-name" content="JitSain">
+    <meta name="keywords" content="登录JitSain, JitSain, 登录, 邮箱登录">
+    <title>欢迎登录JitSain</title>
+    <link rel="stylesheet" href="style/index.css">
+    <script src="script/index.js"></script>
+    <script src="../../../script/js/utils/StringUtils.js"></script>
+    <script src="../../../script/js/utils/WebUtils.js"></script>
+    <script src="../../../cdn/libs/jquery/3.6.3/jquery.min.js"></script>
+</head>
+<body>
+<div id="login-interface">
+    <h2 id="welcome">欢迎登录JitSain</h2>
+    <form action="script/login.php" name="login" method="post" onsubmit="return checkCommit()">
+        <div id="input">
+            <div class="line">
+                <label for="input_email">
+                    <input id="input_email" class="input" type="email" name="email" value="" placeholder="请输入邮箱"/>
+                </label>
+                <span id="email_tip" class="tip"></span>
+            </div>
+            <div class="line">
+                <label for="input_code">
+                    <input id="input_code" class="input" type="text"
+                           name="code" value="" placeholder="请输入验证码"/>
+                </label>
+                <input id="send" class="button" type="button" onclick="sendCode(this)" value="获取验证码"/>
+                <span id="code_tip" class="tip"></span>
+            </div>
+        </div>
+        <div class="line">
+            <label for="accept">
+                <input id="accept" class="accept" type="checkbox" name="accept" value="accepted"/>
+                <span class="accept">我已阅读并同意</span>
+                <a class="accept" href="../../../docs/rule/user/service-agreement/">服务协议</a>
+                <span class="accept">和</span>
+                <a class="accept" href="../../../docs/rule/user/privacy-policy/">隐私政策</a>
+            </label>
+            <span id="accept_tip" class="tip"></span>
+        </div>
+
+        <div class="line">
+            <input id="login" name="submit" type="submit" value="登录"/>
+        </div>
+    </form>
+</div>
+<!--<div id="foot" class="tips">-->
+<!--    <a id="register" class="link" href="../../register/index.html">注册账号</a>-->
+<!--    <a id="forget-password" class="link" href="../../safe/forgot-password/index.html">忘记密码</a>-->
+<!--    <a id="password-login" class="link" href="../login/index.html">密码登录</a>-->
+<!--</div>-->
+</body>
+</html>

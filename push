@@ -1,0 +1,13 @@
+#!/bin/bash
+github="https://github.com/adisaint/adisaint.git"
+gitee="https://gitee.com/adisaint/adisaint.git"
+if [ -e ./git ]; then
+    git init
+    git remote add github $github
+    git remote add gitee $gitee
+fi
+$commit_time=$(date +"%Y-%m-%d %H:%M:%S")
+git add .
+git commit -m "$commit_time"
+git push gitee master
+git push github master

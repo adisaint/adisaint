@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Adisaint Short Link</title>
+    <style>
+        body {
+            margin-top: 15%;
+            text-align: center;
+        }
+
+        #input_url {
+            text-align: center;
+            height: 44px;
+            width: 600px;
+            font-size: 15px;
+        }
+
+        #submit {
+            font-size: 15px;
+            margin-top: 25px;
+            height: 44px;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+<form action="generate.php" method="post" id="generate" >
+    <div class="line" >
+        <label for="input_url">
+            <input id="input_url" name="url" type="url" placeholder="Please enter link"/>
+        </label>
+    </div>
+    <div class="line">
+        <input id="submit" type="submit" onclick="submit()" value="生成">
+    </div>
+</form>
+</body>
+</html>

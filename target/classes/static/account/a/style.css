@@ -1,0 +1,61 @@
+body {
+    text-align: center;
+    margin-top: 12%;
+}
+
+#welcome {
+    font-size: 25px;
+}
+
+.input {
+    font-size: 13px;
+    text-align: center;
+    width: 350px;
+    height: 30px;
+}
+
+#input_username {
+    margin-top: 25px;
+}
+
+#input_password {
+    margin-top: 15px;
+}
+
+.accept {
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+#login {
+    font-size: 13px;
+    margin-top: 25px;
+    width: 160px;
+    height: 35px;
+}
+
+#foot {
+    margin-top: 60px;
+}
+
+.link {
+    font-size: 14px;
+}
+
+#register {
+    margin-right: 35px;
+}
+
+#forget-password {
+    margin-left: 35px;
+    margin-right: 35px;
+}
+
+#email-login {
+    margin-left: 35px;
+}
+
+.tip {
+    font-size: 9px;
+    color: #c50505;
+}

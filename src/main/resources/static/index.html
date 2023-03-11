@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Adisaint</title>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        #settings {
+            margin-right: 20px;
+        }
+
+        #login {
+            margin-top: 8px;
+            margin-left: 1000px;
+        }
+
+        #welcome {
+            margin-top: 5%;
+            font-size: 50px;
+            margin-bottom: 35px;
+        }
+
+        #input {
+            width: 430px;
+            height: 41px;
+            text-align: center;
+        }
+
+        #engine {
+            height: 41px;
+            width: 80px;
+            text-align: center;
+        }
+
+        #search {
+            height: 41px;
+            width: 80px;
+            text-align: center;
+        }
+    </style>
+    <script src="./cdn/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="./cdn/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <script>
+    </script>
+</head>
+<body>
+<div id="head">
+    <button id="settings" onclick="location.href='account/a/'">登录</button>
+    <button id="login" onclick="location.href='./settings.html'">设置</button>
+</div>
+<h1 id="welcome">Adisaint</h1>
+<div class="search">
+    <form action="./search.php" name="search" method="post">
+<!--        <label for="engine">-->
+<!--            <select id="engine" name="e">-->
+<!--                <option id="baidu" value="baidu">百度</option>-->
+<!--                <option id="sogou" value="sogou">搜狗</option>-->
+<!--                <option id="360" value="360">360</option>-->
+<!--                <option id="bing" value="bing">Bing</option>-->
+<!--                <option id="google" value="google">Google</option>-->
+<!--            </select>-->
+<!--        </label>-->
+        <label>
+            <input type="search" placeholder="在Adisaint上搜索, 或者输入网址" id="input" name="q">
+        </label>
+<!--        <input type="submit" id="search" value="搜索">-->
+    </form>
+</div>
+</body>
+</html>

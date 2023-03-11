@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="303.0" prefWidth="377.0" xmlns="http://javafx.com/javafx/17.0.2-ea"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.adisaint.client.root.account.register.Register">
+    <Label layoutX="118.0" layoutY="24.0" prefHeight="29.0" prefWidth="142.0" text="欢迎注册Gandjax">
+        <font>
+            <Font size="18.0"/>
+        </font>
+    </Label>
+    <TextField fx:id="usernameText" layoutX="62.0" layoutY="74.0" prefHeight="27.0" prefWidth="254.0"
+               promptText="请输入用户名"/>
+    <PasswordField fx:id="passwordText" layoutX="62.0" layoutY="114.0" prefHeight="27.0" prefWidth="254.0"
+                   promptText="请输入密码"/>
+    <TextField fx:id="emailText" layoutX="62.0" layoutY="152.0" prefHeight="27.0" prefWidth="254.0"
+               promptText="请输入邮箱"/>
+    <TextField fx:id="codeText" layoutX="62.0" layoutY="191.0" prefHeight="27.0" prefWidth="148.0"
+               promptText="请输入验证码"/>
+    <Button fx:id="sendCodeButton" layoutX="220.0" layoutY="191.0" mnemonicParsing="false"
+            onAction="#sendVerificationCode" prefHeight="27.0" prefWidth="96.0" text="发送验证码"/>
+    <Button fx:id="registerButton" layoutX="90.0" layoutY="239.0" mnemonicParsing="false" onAction="#executeRegister"
+            prefHeight="29.0" prefWidth="197.0" text="注册"/>
+</AnchorPane>
